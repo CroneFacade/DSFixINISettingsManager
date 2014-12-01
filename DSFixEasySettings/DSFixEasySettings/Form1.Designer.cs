@@ -34,6 +34,7 @@
             this.ResolutionBox = new System.Windows.Forms.ComboBox();
             this.AAQuality = new System.Windows.Forms.ComboBox();
             this.AAType = new System.Windows.Forms.ComboBox();
+            this.SSAOStrength = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -112,11 +113,27 @@
             this.AAType.Text = "AntiAliasting Type";
             this.AAType.SelectedIndexChanged += new System.EventHandler(this.AAType_SelectedIndexChanged);
             // 
+            // SSAOStrength
+            // 
+            this.SSAOStrength.FormattingEnabled = true;
+            this.SSAOStrength.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
+            this.SSAOStrength.Location = new System.Drawing.Point(9, 97);
+            this.SSAOStrength.Name = "SSAOStrength";
+            this.SSAOStrength.Size = new System.Drawing.Size(121, 21);
+            this.SSAOStrength.TabIndex = 8;
+            this.SSAOStrength.Text = "SSAO Strength";
+            this.SSAOStrength.SelectedIndexChanged += new System.EventHandler(this.SSAOStrength_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.SSAOStrength);
             this.Controls.Add(this.AAType);
             this.Controls.Add(this.AAQuality);
             this.Controls.Add(this.ResolutionBox);
@@ -138,6 +155,7 @@
         private System.Windows.Forms.ComboBox ResolutionBox;
         private System.Windows.Forms.ComboBox AAQuality;
         private System.Windows.Forms.ComboBox AAType;
+        private System.Windows.Forms.ComboBox SSAOStrength;
     }
 }
 

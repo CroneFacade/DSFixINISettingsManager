@@ -121,5 +121,27 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void SSAOStrength_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (SSAOStrength.Text)
+            {
+                case "0":
+                    DSFix_ini_contents.ssaoStrength = "0";
+                    break;
+                case "1":
+                    DSFix_ini_contents.ssaoStrength = "1";
+                    break;
+                case "2":
+                    DSFix_ini_contents.ssaoStrength = "2";
+                    break;
+                case "3":
+                    DSFix_ini_contents.ssaoStrength = "3";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
