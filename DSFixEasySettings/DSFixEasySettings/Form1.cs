@@ -143,5 +143,24 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void SSAOScale_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (SSAOScale.Text)
+            {
+                case "1":
+                    DSFix_ini_contents.ssaoScale = "1";
+                    break;
+                case "2":
+                    DSFix_ini_contents.ssaoScale = "2";
+                    break;
+                case "3":
+                    DSFix_ini_contents.ssaoScale = "3";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
