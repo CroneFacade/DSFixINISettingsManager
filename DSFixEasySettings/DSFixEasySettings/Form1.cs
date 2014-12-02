@@ -252,42 +252,67 @@ namespace DSFixEasySettings
         {
             switch (HudOpacity.Text)
             {
-                case "1.0":
+                case "1.0f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
-                case "0.9":
+                case "0.9f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
-                case "0.8":
+                case "0.8f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
-                case "0.7":
+                case "0.7f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
-                case "0.6":
+                case "0.6f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
-                case "0.5":
+                case "0.5f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
-                case "0.4":
+                case "0.4f":
                     DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
                     DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
                     break;
 
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
+
+        private void ScreenSetting_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (ScreenSetting.Text)
+            {
+                case "Fullscreen":
+                    DSFix_ini_contents.forceFullscreen = "1";
+                    DSFix_ini_contents.forceWindowed = "0";
+                    DSFix_ini_contents.borderlessFullscreen = "0";
+                    break;
+                case "Windowed":
+                    DSFix_ini_contents.forceFullscreen = "0";
+                    DSFix_ini_contents.forceWindowed = "1";
+                    DSFix_ini_contents.borderlessFullscreen = "0";
+                    break;
+                case "BorderlessFullscreen":
+                    DSFix_ini_contents.forceFullscreen = "0";
+                    DSFix_ini_contents.forceWindowed = "0";
+                    DSFix_ini_contents.borderlessFullscreen = "1";
+                    break;
                 default:
                     break;
             }

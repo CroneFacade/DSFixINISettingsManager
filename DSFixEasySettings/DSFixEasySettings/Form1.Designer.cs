@@ -41,6 +41,7 @@
             this.HudModMinimal = new System.Windows.Forms.ComboBox();
             this.HudScale = new System.Windows.Forms.ComboBox();
             this.HudOpacity = new System.Windows.Forms.ComboBox();
+            this.ScreenSetting = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -211,13 +212,13 @@
             // 
             this.HudOpacity.FormattingEnabled = true;
             this.HudOpacity.Items.AddRange(new object[] {
-            "1.0",
-            "0.9",
-            "0.8",
-            "0.7",
-            "0.6",
-            "0.5",
-            "0.4"});
+            "1.0f",
+            "0.9f",
+            "0.8f",
+            "0.7f",
+            "0.6f",
+            "0.5f",
+            "0.4f"});
             this.HudOpacity.Location = new System.Drawing.Point(9, 265);
             this.HudOpacity.Name = "HudOpacity";
             this.HudOpacity.Size = new System.Drawing.Size(121, 21);
@@ -225,11 +226,26 @@
             this.HudOpacity.Text = "Hud Opacity";
             this.HudOpacity.SelectedIndexChanged += new System.EventHandler(this.HudOpacity_SelectedIndexChanged);
             // 
+            // ScreenSetting
+            // 
+            this.ScreenSetting.FormattingEnabled = true;
+            this.ScreenSetting.Items.AddRange(new object[] {
+            "Fullscreen",
+            "Windowed",
+            "BorderlessFullscreen"});
+            this.ScreenSetting.Location = new System.Drawing.Point(9, 293);
+            this.ScreenSetting.Name = "ScreenSetting";
+            this.ScreenSetting.Size = new System.Drawing.Size(121, 21);
+            this.ScreenSetting.TabIndex = 15;
+            this.ScreenSetting.Text = "Screen Setting";
+            this.ScreenSetting.SelectedIndexChanged += new System.EventHandler(this.ScreenSetting_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.ScreenSetting);
             this.Controls.Add(this.HudOpacity);
             this.Controls.Add(this.HudScale);
             this.Controls.Add(this.HudModMinimal);
@@ -265,6 +281,7 @@
         private System.Windows.Forms.ComboBox HudModMinimal;
         private System.Windows.Forms.ComboBox HudScale;
         private System.Windows.Forms.ComboBox HudOpacity;
+        private System.Windows.Forms.ComboBox ScreenSetting;
     }
 }
 
