@@ -200,5 +200,21 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void HudModMinimal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (HudModMinimal.Text)
+            {
+                case "On":
+                    DSFix_ini_contents.enableMinimalHud = "1";
+                    break;
+                case "Off":
+                    DSFix_ini_contents.enableMinimalHud = "0";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
