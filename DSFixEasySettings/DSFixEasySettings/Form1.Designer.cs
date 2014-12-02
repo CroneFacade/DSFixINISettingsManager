@@ -44,6 +44,7 @@
             this.ScreenSetting = new System.Windows.Forms.ComboBox();
             this.DisableCursor = new System.Windows.Forms.ComboBox();
             this.SkipIntro = new System.Windows.Forms.ComboBox();
+            this.Vsync = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -268,11 +269,25 @@
             this.SkipIntro.Text = "Skip Intro Option";
             this.SkipIntro.SelectedIndexChanged += new System.EventHandler(this.SkipIntro_SelectedIndexChanged);
             // 
+            // Vsync
+            // 
+            this.Vsync.FormattingEnabled = true;
+            this.Vsync.Items.AddRange(new object[] {
+            "On",
+            "Off"});
+            this.Vsync.Location = new System.Drawing.Point(9, 377);
+            this.Vsync.Name = "Vsync";
+            this.Vsync.Size = new System.Drawing.Size(121, 21);
+            this.Vsync.TabIndex = 18;
+            this.Vsync.Text = "Vsync";
+            this.Vsync.SelectedIndexChanged += new System.EventHandler(this.Vsync_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.Vsync);
             this.Controls.Add(this.SkipIntro);
             this.Controls.Add(this.DisableCursor);
             this.Controls.Add(this.ScreenSetting);
@@ -314,6 +329,7 @@
         private System.Windows.Forms.ComboBox ScreenSetting;
         private System.Windows.Forms.ComboBox DisableCursor;
         private System.Windows.Forms.ComboBox SkipIntro;
+        private System.Windows.Forms.ComboBox Vsync;
     }
 }
 

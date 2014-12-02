@@ -350,5 +350,21 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void Vsync_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (Vsync.Text)
+            {
+                case "On":
+                    DSFix_ini_contents.enableVsync = "1";
+                    break;
+                case "Off":
+                    DSFix_ini_contents.enableVsync = "0";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
