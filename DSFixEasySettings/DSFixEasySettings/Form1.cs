@@ -247,5 +247,51 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void HudOpacity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (HudOpacity.Text)
+            {
+                case "1.0":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+                case "0.9":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+                case "0.8":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+                case "0.7":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+                case "0.6":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+                case "0.5":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+                case "0.4":
+                    DSFix_ini_contents.hudBottomLeftOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudBottomRightOpacity = HudOpacity.Text;
+                    DSFix_ini_contents.hudTopLeftOpacity = HudOpacity.Text;
+                    break;
+
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }

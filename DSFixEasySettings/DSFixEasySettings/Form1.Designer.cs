@@ -210,11 +210,20 @@
             // HudOpacity
             // 
             this.HudOpacity.FormattingEnabled = true;
+            this.HudOpacity.Items.AddRange(new object[] {
+            "1.0",
+            "0.9",
+            "0.8",
+            "0.7",
+            "0.6",
+            "0.5",
+            "0.4"});
             this.HudOpacity.Location = new System.Drawing.Point(9, 265);
             this.HudOpacity.Name = "HudOpacity";
             this.HudOpacity.Size = new System.Drawing.Size(121, 21);
             this.HudOpacity.TabIndex = 14;
             this.HudOpacity.Text = "Hud Opacity";
+            this.HudOpacity.SelectedIndexChanged += new System.EventHandler(this.HudOpacity_SelectedIndexChanged);
             // 
             // DSFixEasySettings
             // 
