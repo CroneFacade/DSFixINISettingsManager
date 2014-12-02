@@ -56,7 +56,7 @@
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Location = new System.Drawing.Point(251, 541);
+            this.buttonHelp.Location = new System.Drawing.Point(251, 562);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(75, 23);
             this.buttonHelp.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(170, 541);
+            this.buttonReset.Location = new System.Drawing.Point(170, 562);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(75, 23);
             this.buttonReset.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.settingsListBox.Location = new System.Drawing.Point(161, 12);
             this.settingsListBox.Multiline = true;
             this.settingsListBox.Name = "settingsListBox";
-            this.settingsListBox.Size = new System.Drawing.Size(175, 523);
+            this.settingsListBox.Size = new System.Drawing.Size(175, 544);
             this.settingsListBox.TabIndex = 4;
             // 
             // ResolutionBox
@@ -358,7 +358,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 576);
+            this.ClientSize = new System.Drawing.Size(348, 594);
             this.Controls.Add(this.buttonUltra);
             this.Controls.Add(this.buttonHigh);
             this.Controls.Add(this.buttonMedium);
