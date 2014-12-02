@@ -42,6 +42,7 @@
             this.HudScale = new System.Windows.Forms.ComboBox();
             this.HudOpacity = new System.Windows.Forms.ComboBox();
             this.ScreenSetting = new System.Windows.Forms.ComboBox();
+            this.DisableCursor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -240,11 +241,25 @@
             this.ScreenSetting.Text = "Screen Setting";
             this.ScreenSetting.SelectedIndexChanged += new System.EventHandler(this.ScreenSetting_SelectedIndexChanged);
             // 
+            // DisableCursor
+            // 
+            this.DisableCursor.FormattingEnabled = true;
+            this.DisableCursor.Items.AddRange(new object[] {
+            "Cursor Enabled",
+            "Cursor Disabled"});
+            this.DisableCursor.Location = new System.Drawing.Point(9, 321);
+            this.DisableCursor.Name = "DisableCursor";
+            this.DisableCursor.Size = new System.Drawing.Size(121, 21);
+            this.DisableCursor.TabIndex = 16;
+            this.DisableCursor.Text = "Disable Cursor";
+            this.DisableCursor.SelectedIndexChanged += new System.EventHandler(this.DisableCursor_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.DisableCursor);
             this.Controls.Add(this.ScreenSetting);
             this.Controls.Add(this.HudOpacity);
             this.Controls.Add(this.HudScale);
@@ -282,6 +297,7 @@
         private System.Windows.Forms.ComboBox HudScale;
         private System.Windows.Forms.ComboBox HudOpacity;
         private System.Windows.Forms.ComboBox ScreenSetting;
+        private System.Windows.Forms.ComboBox DisableCursor;
     }
 }
 

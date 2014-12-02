@@ -318,5 +318,21 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void DisableCursor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (DisableCursor.Text)
+            {
+                case "Cursor Enabled":
+                    DSFix_ini_contents.disableCursor = "0";
+                    break;
+                case "Cursor Disabled":
+                    DSFix_ini_contents.disableCursor = "1";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
