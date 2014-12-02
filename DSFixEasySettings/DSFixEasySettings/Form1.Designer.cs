@@ -36,6 +36,7 @@
             this.AAType = new System.Windows.Forms.ComboBox();
             this.SSAOStrength = new System.Windows.Forms.ComboBox();
             this.SSAOScale = new System.Windows.Forms.ComboBox();
+            this.SSAOType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -143,11 +144,27 @@
             this.SSAOScale.Text = "SSAO Scale";
             this.SSAOScale.SelectedIndexChanged += new System.EventHandler(this.SSAOScale_SelectedIndexChanged);
             // 
+            // SSAOType
+            // 
+            this.SSAOType.FormattingEnabled = true;
+            this.SSAOType.Items.AddRange(new object[] {
+            "VSSAO",
+            "VSSAO2",
+            "HBAO",
+            "SCAO"});
+            this.SSAOType.Location = new System.Drawing.Point(9, 153);
+            this.SSAOType.Name = "SSAOType";
+            this.SSAOType.Size = new System.Drawing.Size(121, 21);
+            this.SSAOType.TabIndex = 10;
+            this.SSAOType.Text = "SSAO Type";
+            this.SSAOType.SelectedIndexChanged += new System.EventHandler(this.SSAOType_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.SSAOType);
             this.Controls.Add(this.SSAOScale);
             this.Controls.Add(this.SSAOStrength);
             this.Controls.Add(this.AAType);
@@ -173,6 +190,7 @@
         private System.Windows.Forms.ComboBox AAType;
         private System.Windows.Forms.ComboBox SSAOStrength;
         private System.Windows.Forms.ComboBox SSAOScale;
+        private System.Windows.Forms.ComboBox SSAOType;
     }
 }
 

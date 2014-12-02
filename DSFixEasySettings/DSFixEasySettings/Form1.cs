@@ -162,5 +162,27 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void SSAOType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (SSAOType.Text)
+            {
+                case "VSSAO":
+                    DSFix_ini_contents.ssaoType = "VSSAO";
+                    break;
+                case "VSSAO2":
+                    DSFix_ini_contents.ssaoType = "VSSAO2";
+                    break;
+                case "HBAO":
+                    DSFix_ini_contents.ssaoType = "HBAO";
+                    break;
+                case "SCAO":
+                    DSFix_ini_contents.ssaoType = "SCAO";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
