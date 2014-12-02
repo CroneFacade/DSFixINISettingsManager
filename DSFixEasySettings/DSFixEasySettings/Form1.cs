@@ -366,5 +366,42 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void buttonLow_Click(object sender, EventArgs e)
+        {
+            DSFix_ini_contents.aaQuality = "0";
+            DSFix_ini_contents.ssaoStrength = "0";
+            UpdateSettingsDisplay();
+        }
+
+        private void buttonMedium_Click(object sender, EventArgs e)
+        {
+            DSFix_ini_contents.aaQuality = "2";
+            DSFix_ini_contents.aaType = "FXAA";
+            DSFix_ini_contents.ssaoType = "VSSAO";
+            DSFix_ini_contents.ssaoStrength = "2";
+            DSFix_ini_contents.ssaoScale = "2";
+            UpdateSettingsDisplay();
+        }
+
+        private void buttonHigh_Click(object sender, EventArgs e)
+        {
+            DSFix_ini_contents.aaQuality = "3";
+            DSFix_ini_contents.aaType = "SMAA";
+            DSFix_ini_contents.ssaoType = "VSSAO2";
+            DSFix_ini_contents.ssaoStrength = "3";
+            DSFix_ini_contents.ssaoScale = "1";
+            UpdateSettingsDisplay();
+        }
+
+        private void buttonUltra_Click(object sender, EventArgs e)
+        {
+            DSFix_ini_contents.aaQuality = "4";
+            DSFix_ini_contents.aaType = "SMAA";
+            DSFix_ini_contents.ssaoType = "SCAO";
+            DSFix_ini_contents.ssaoStrength = "3";
+            DSFix_ini_contents.ssaoScale = "1";
+            UpdateSettingsDisplay();
+        }
     }
 }
