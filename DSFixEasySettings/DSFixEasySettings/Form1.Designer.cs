@@ -43,6 +43,7 @@
             this.HudOpacity = new System.Windows.Forms.ComboBox();
             this.ScreenSetting = new System.Windows.Forms.ComboBox();
             this.DisableCursor = new System.Windows.Forms.ComboBox();
+            this.SkipIntro = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -254,11 +255,25 @@
             this.DisableCursor.Text = "Disable Cursor";
             this.DisableCursor.SelectedIndexChanged += new System.EventHandler(this.DisableCursor_SelectedIndexChanged);
             // 
+            // SkipIntro
+            // 
+            this.SkipIntro.FormattingEnabled = true;
+            this.SkipIntro.Items.AddRange(new object[] {
+            "Skip",
+            "Do Not Skip"});
+            this.SkipIntro.Location = new System.Drawing.Point(9, 349);
+            this.SkipIntro.Name = "SkipIntro";
+            this.SkipIntro.Size = new System.Drawing.Size(121, 21);
+            this.SkipIntro.TabIndex = 17;
+            this.SkipIntro.Text = "Skip Intro Option";
+            this.SkipIntro.SelectedIndexChanged += new System.EventHandler(this.SkipIntro_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.SkipIntro);
             this.Controls.Add(this.DisableCursor);
             this.Controls.Add(this.ScreenSetting);
             this.Controls.Add(this.HudOpacity);
@@ -298,6 +313,7 @@
         private System.Windows.Forms.ComboBox HudOpacity;
         private System.Windows.Forms.ComboBox ScreenSetting;
         private System.Windows.Forms.ComboBox DisableCursor;
+        private System.Windows.Forms.ComboBox SkipIntro;
     }
 }
 

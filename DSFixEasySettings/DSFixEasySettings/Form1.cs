@@ -334,5 +334,21 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void SkipIntro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (SkipIntro.Text)
+            {
+                case "Do Not Skip":
+                    DSFix_ini_contents.skipIntro = "0";
+                    break;
+                case "Skip":
+                    DSFix_ini_contents.skipIntro = "1";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
