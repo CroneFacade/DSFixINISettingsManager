@@ -37,6 +37,7 @@
             this.SSAOStrength = new System.Windows.Forms.ComboBox();
             this.SSAOScale = new System.Windows.Forms.ComboBox();
             this.SSAOType = new System.Windows.Forms.ComboBox();
+            this.HudModOnOff = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -159,11 +160,25 @@
             this.SSAOType.Text = "SSAO Type";
             this.SSAOType.SelectedIndexChanged += new System.EventHandler(this.SSAOType_SelectedIndexChanged);
             // 
+            // HudModOnOff
+            // 
+            this.HudModOnOff.FormattingEnabled = true;
+            this.HudModOnOff.Items.AddRange(new object[] {
+            "On",
+            "Off"});
+            this.HudModOnOff.Location = new System.Drawing.Point(9, 181);
+            this.HudModOnOff.Name = "HudModOnOff";
+            this.HudModOnOff.Size = new System.Drawing.Size(121, 21);
+            this.HudModOnOff.TabIndex = 11;
+            this.HudModOnOff.Text = "Enable Hud Mods";
+            this.HudModOnOff.SelectedIndexChanged += new System.EventHandler(this.HudModOnOff_SelectedIndexChanged);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.HudModOnOff);
             this.Controls.Add(this.SSAOType);
             this.Controls.Add(this.SSAOScale);
             this.Controls.Add(this.SSAOStrength);
@@ -191,6 +206,7 @@
         private System.Windows.Forms.ComboBox SSAOStrength;
         private System.Windows.Forms.ComboBox SSAOScale;
         private System.Windows.Forms.ComboBox SSAOType;
+        private System.Windows.Forms.ComboBox HudModOnOff;
     }
 }
 

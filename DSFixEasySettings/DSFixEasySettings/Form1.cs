@@ -184,5 +184,21 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void HudModOnOff_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (HudModOnOff.Text)
+            {
+                case "On":
+                    DSFix_ini_contents.enableHudMod = "1";
+                    break;
+                case "Off":
+                    DSFix_ini_contents.enableHudMod = "0";
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }
