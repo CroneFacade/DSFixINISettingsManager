@@ -70,7 +70,7 @@ namespace DSFixEasySettings
             filteringOverride = "0";
             enableHudMod = "0";
             enableMinimalHud = "1";
-            hudScaleFactor = "0.75";
+            hudScaleFactor = "1";
             hudTopLeftOpacity = "0.8f";
             hudBottomLeftOpacity = "0.75f";
             hudBottomRightOpacity = "0.5f";

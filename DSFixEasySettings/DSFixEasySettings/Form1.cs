@@ -216,5 +216,36 @@ namespace DSFixEasySettings
             }
             UpdateSettingsDisplay();
         }
+
+        private void HudScale_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (HudScale.Text)
+            {
+                case "1.75":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                case "1.50":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                case "1.25":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                case "1":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                case "0.75":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                case "0.50":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                case "0.25":
+                    DSFix_ini_contents.hudScaleFactor = HudScale.Text;
+                    break;
+                default:
+                    break;
+            }
+            UpdateSettingsDisplay();
+        }
     }
 }

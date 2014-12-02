@@ -39,6 +39,8 @@
             this.SSAOType = new System.Windows.Forms.ComboBox();
             this.HudModOnOff = new System.Windows.Forms.ComboBox();
             this.HudModMinimal = new System.Windows.Forms.ComboBox();
+            this.HudScale = new System.Windows.Forms.ComboBox();
+            this.HudOpacity = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonHelp
@@ -187,11 +189,40 @@
             this.HudModMinimal.Text = "Minimal Hud";
             this.HudModMinimal.SelectedIndexChanged += new System.EventHandler(this.HudModMinimal_SelectedIndexChanged);
             // 
+            // HudScale
+            // 
+            this.HudScale.FormattingEnabled = true;
+            this.HudScale.Items.AddRange(new object[] {
+            "1.75",
+            "1.50",
+            "1.25",
+            "1",
+            "0.75",
+            "0.50",
+            "0.25"});
+            this.HudScale.Location = new System.Drawing.Point(9, 237);
+            this.HudScale.Name = "HudScale";
+            this.HudScale.Size = new System.Drawing.Size(121, 21);
+            this.HudScale.TabIndex = 13;
+            this.HudScale.Text = "Hud Scale";
+            this.HudScale.SelectedIndexChanged += new System.EventHandler(this.HudScale_SelectedIndexChanged);
+            // 
+            // HudOpacity
+            // 
+            this.HudOpacity.FormattingEnabled = true;
+            this.HudOpacity.Location = new System.Drawing.Point(9, 265);
+            this.HudOpacity.Name = "HudOpacity";
+            this.HudOpacity.Size = new System.Drawing.Size(121, 21);
+            this.HudOpacity.TabIndex = 14;
+            this.HudOpacity.Text = "Hud Opacity";
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 576);
+            this.Controls.Add(this.HudOpacity);
+            this.Controls.Add(this.HudScale);
             this.Controls.Add(this.HudModMinimal);
             this.Controls.Add(this.HudModOnOff);
             this.Controls.Add(this.SSAOType);
@@ -223,6 +254,8 @@
         private System.Windows.Forms.ComboBox SSAOType;
         private System.Windows.Forms.ComboBox HudModOnOff;
         private System.Windows.Forms.ComboBox HudModMinimal;
+        private System.Windows.Forms.ComboBox HudScale;
+        private System.Windows.Forms.ComboBox HudOpacity;
     }
 }
 
