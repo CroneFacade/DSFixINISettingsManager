@@ -43,9 +43,9 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(259, 53);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Choose your settings in the drop down menu\'s. When you are finished, copy the tex" +
-    "t from the large text box and replace the current text in your DSFix.ini with it" +
-    "";
+            this.textBox1.Text = "Select your graphic options in the dropdown menus. When you are done, click the D" +
+    "one button, your settings will save in the DSFix.ini file and then the program w" +
+    "ill close.";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // HelpWindow

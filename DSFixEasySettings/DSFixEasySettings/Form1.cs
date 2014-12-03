@@ -410,6 +410,7 @@ namespace DSFixEasySettings
             
 
             System.IO.File.WriteAllLines(@"DSFix.ini", FinishedSettings);
+            Environment.Exit(0);
         }
     }
 }
