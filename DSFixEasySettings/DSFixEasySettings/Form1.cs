@@ -403,5 +403,13 @@ namespace DSFixEasySettings
             DSFix_ini_contents.ssaoScale = "1";
             UpdateSettingsDisplay();
         }
+
+        private void buttonDone_Click(object sender, EventArgs e)
+        {
+            string[] FinishedSettings = DSFix_ini_contents.CompleteSettingsList.ToArray();
+            
+
+            System.IO.File.WriteAllLines(@"DSFix.ini", FinishedSettings);
+        }
     }
 }

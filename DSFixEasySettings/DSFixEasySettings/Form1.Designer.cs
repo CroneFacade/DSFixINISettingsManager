@@ -52,13 +52,14 @@
             this.buttonMedium = new System.Windows.Forms.Button();
             this.buttonHigh = new System.Windows.Forms.Button();
             this.buttonUltra = new System.Windows.Forms.Button();
+            this.buttonDone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Location = new System.Drawing.Point(251, 562);
+            this.buttonHelp.Location = new System.Drawing.Point(75, 582);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(75, 23);
+            this.buttonHelp.Size = new System.Drawing.Size(57, 23);
             this.buttonHelp.TabIndex = 0;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(170, 562);
+            this.buttonReset.Location = new System.Drawing.Point(11, 582);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.Size = new System.Drawing.Size(58, 23);
             this.buttonReset.TabIndex = 2;
             this.buttonReset.Text = "Reset Default";
             this.buttonReset.UseVisualStyleBackColor = true;
@@ -354,11 +355,24 @@
             this.buttonUltra.UseVisualStyleBackColor = true;
             this.buttonUltra.Click += new System.EventHandler(this.buttonUltra_Click);
             // 
+            // buttonDone
+            // 
+            this.buttonDone.Location = new System.Drawing.Point(161, 563);
+            this.buttonDone.Name = "buttonDone";
+            this.buttonDone.Size = new System.Drawing.Size(175, 42);
+            this.buttonDone.TabIndex = 24;
+            this.buttonDone.Text = "Done";
+            this.toolTip.SetToolTip(this.buttonDone, "Click here when you are done with your settings. The program will save your chang" +
+        "es to DSFix.ini and then close");
+            this.buttonDone.UseVisualStyleBackColor = true;
+            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
+            // 
             // DSFixEasySettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 594);
+            this.ClientSize = new System.Drawing.Size(348, 614);
+            this.Controls.Add(this.buttonDone);
             this.Controls.Add(this.buttonUltra);
             this.Controls.Add(this.buttonHigh);
             this.Controls.Add(this.buttonMedium);
@@ -413,6 +427,7 @@
         private System.Windows.Forms.Button buttonMedium;
         private System.Windows.Forms.Button buttonHigh;
         private System.Windows.Forms.Button buttonUltra;
+        private System.Windows.Forms.Button buttonDone;
     }
 }
 
